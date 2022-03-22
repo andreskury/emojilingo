@@ -9,7 +9,6 @@ const CardWrapper = styled(Card)(() => ({
   }));
 
 const AnswerCard = (props) =>{
-    console.log(props)
     let emoji = props.collection[1][Math.floor(Math.random()*props.collection[1].length)].emoji
     return <CardWrapper sx={{ minWidth: 200 }} onClick={props.onClick} elevation={4}>
                 <CardContent>

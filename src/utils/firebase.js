@@ -6,12 +6,13 @@ import { getFirestore } from 'firebase/firestore/lite';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAfogaOsezaZZIhW9pOCz2yFY3rTACphZ4",
-  authDomain: "firetest-23392.firebaseapp.com",
-  projectId: "firetest-23392",
-  storageBucket: "firetest-23392.appspot.com",
-  messagingSenderId: "1027635746534",
-  appId: "1:1027635746534:web:96fb67593df42f870ccd27"
+  apiKey: "AIzaSyA4zn3ghDP-Xl0oQ5Icytg6KidPxzEwzJQ",
+  authDomain: "emojilingo.firebaseapp.com",
+  projectId: "emojilingo",
+  storageBucket: "emojilingo.appspot.com",
+  messagingSenderId: "502560826234",
+  appId: "1:502560826234:web:03dbdeb1f3bb40cf882cc3",
+  measurementId: "G-0M6SKW1P3P"
 };
 
 // Initialize Firebase
