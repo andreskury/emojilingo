@@ -1,0 +1,430 @@
+{
+    "animals": [
+        {
+            "emoji": "🐒",
+            "EN": "Monkey"
+        },
+        {
+            "emoji": "🐕",
+            "EN": "Dog"
+        },
+        {
+            "emoji": "🦝",
+            "EN": "Raccoon"
+        },
+        {
+            "emoji": "🐈",
+            "EN": "Cat"
+        },
+        {
+            "emoji": "🐅",
+            "EN": "Tiger"
+        },
+        {
+            "emoji": "🐎",
+            "EN": "Horse"
+        },
+        {
+            "emoji": "🦓",
+            "EN": "Zebra"
+        },
+        {
+            "emoji": "🦌",
+            "EN": "Deer"
+        },
+        {
+            "emoji": "🐄",
+            "EN": "Cow"
+        },
+        {
+            "emoji": "🐖",
+            "EN": "Pig"
+        },
+        {
+            "emoji": "🐑",
+            "EN": "Sheep"
+        },
+        {
+            "emoji": "🐐",
+            "EN": "Goat"
+        },
+        {
+            "emoji": "🐫",
+            "EN": "Camel"
+        },
+        {
+            "emoji": "🦙",
+            "EN": "Llama"
+        },
+        {
+            "emoji": "🦒",
+            "EN": "Giraffe"
+        },
+        {
+            "emoji": "🐘",
+            "EN": "Elephant"
+        },
+        {
+            "emoji": "🦏",
+            "EN": "Rhinoceros"
+        },
+        {
+            "emoji": "🦛",
+            "EN": "Hippopotamus"
+        },
+        {
+            "emoji": "🐁",
+            "EN": "Mouse"
+        },
+        {
+            "emoji": "🐇",
+            "EN": "Rabbit"
+        },
+        {
+            "emoji": "🦫",
+            "EN": "Beaver"
+        },
+        {
+            "emoji": "🦔",
+            "EN": "Hedgehog"
+        },
+        {
+            "emoji": "🦇",
+            "EN": "Bat"
+        },
+        {
+            "emoji": "🦨",
+            "EN": "Skunk"
+        },
+        {
+            "emoji": "🦘",
+            "EN": "Kangaroo"
+        },
+        {
+            "emoji": "🦃",
+            "EN": "Turkey"
+        },
+        {
+            "emoji": "🦡",
+            "EN": "Badger"
+        },
+        {
+            "emoji": "🐓",
+            "EN": "Rooster"
+        },
+        {
+            "emoji": "🕊️",
+            "EN": "Dove"
+        },
+        {
+            "emoji": "🦅",
+            "EN": "Eagle"
+        },
+        {
+            "emoji": "🦆",
+            "EN": "Duck"
+        },
+        {
+            "emoji": "🦢",
+            "EN": "Swan"
+        },
+        {
+            "emoji": "🦉",
+            "EN": "Owl"
+        },
+        {
+            "emoji": "🦩",
+            "EN": "Flamingo"
+        },
+        {
+            "emoji": "🦚",
+            "EN": "Peacock"
+        },
+        {
+            "emoji": "🦜",
+            "EN": "Parrot"
+        },
+        {
+            "emoji": "🐊",
+            "EN": "Crocodile"
+        },
+        {
+            "emoji": "🐢",
+            "EN": "Turtle"
+        },
+        {
+            "emoji": "🦎",
+            "EN": "Lizard"
+        },
+        {
+            "emoji": "🐍",
+            "EN": "Snake"
+        },
+        {
+            "emoji": "🐋",
+            "EN": "Whale"
+        },
+        {
+            "emoji": "🐬",
+            "EN": "Dolphin"
+        },
+        {
+            "emoji": "🦭",
+            "EN": "Seal"
+        },
+        {
+            "emoji": "🦈",
+            "EN": "Shark"
+        },
+        {
+            "emoji": "🐌",
+            "EN": "Snail"
+        },
+        {
+            "emoji": "🦋",
+            "EN": "Butterfly"
+        },
+        {
+            "emoji": "🐜",
+            "EN": "Ant"
+        },
+        {
+            "emoji": "🐝",
+            "EN": "Bee"
+        },
+        {
+            "emoji": "🦗",
+            "EN": "Cricket"
+        },
+        {
+            "emoji": "🪳",
+            "EN": "Cockroach"
+        },
+        {
+            "emoji": "🕷️",
+            "EN": "Spider"
+        },
+        {
+            "emoji": "🦂",
+            "EN": "Scorpion"
+        },
+        {
+            "emoji": "🦟",
+            "EN": "Mosquito"
+        },
+        {
+            "emoji": "🪰",
+            "EN": "Fly"
+        },
+        {
+            "emoji": "🪱",
+            "EN": "Worm"
+        },
+        {
+            "emoji": "🦀",
+            "EN": "Crab"
+        },
+        {
+            "emoji": "🦞",
+            "EN": "Lobster"
+        },
+        {
+            "emoji": "🦐",
+            "EN": "Shrimp"
+        },
+        {
+            "emoji": "🦑",
+            "EN": "Squid"
+        }
+    ],
+    "food": [
+        {
+            "emoji": "🍇",
+            "EN": "Grapes"
+        },
+        {
+            "emoji": "🍈",
+            "EN": "Melon"
+        },
+        {
+            "emoji": "🍉",
+            "EN": "Watermelon"
+        },
+        {
+            "emoji": "🍊",
+            "EN": "Tangerine"
+        },
+        {
+            "emoji": "🍋",
+            "EN": "Lemon"
+        },
+        {
+            "emoji": "🍌",
+            "EN": "Banana"
+        },
+        {
+            "emoji": "🍍",
+            "EN": "Pineapple"
+        },
+        {
+            "emoji": "🥭",
+            "EN": "Mango"
+        },
+        {
+            "emoji": "🍎",
+            "EN": "Apple"
+        },
+        {
+            "emoji": "🍐",
+            "EN": "Pear"
+        },
+        {
+            "emoji": "🍑",
+            "EN": "Peach"
+        },
+        {
+            "emoji": "🍒",
+            "EN": "Cherries"
+        },
+        {
+            "emoji": "🍓",
+            "EN": "Strawberry"
+        },
+        {
+            "emoji": "🫐",
+            "EN": "Blueberries"
+        },
+        {
+            "emoji": "🥝",
+            "EN": "Kiwi"
+        },
+        {
+            "emoji": "🍅",
+            "EN": "Tomato"
+        },
+        {
+            "emoji": "🫒",
+            "EN": "Olive"
+        },
+        {
+            "emoji": "🥥",
+            "EN": "Coconut"
+        },
+        {
+            "emoji": "🥑",
+            "EN": "Avocado"
+        },
+        {
+            "emoji": "🍆",
+            "EN": "Eggplant"
+        },
+        {
+            "emoji": "🥔",
+            "EN": "Potato"
+        },
+        {
+            "emoji": "🥕",
+            "EN": "Carrot"
+        },
+        {
+            "emoji": "🌽",
+            "EN": "Corn"
+        },
+        {
+            "emoji": "🌶️",
+            "EN": "Chilli Pepper"
+        },
+        {
+            "emoji": "🫑",
+            "EN": "Bell Pepper"
+        },
+        {
+            "emoji": "🥒",
+            "EN": "Cucumber"
+        },
+        {
+            "emoji": "🥬",
+            "EN": "Lettuce"
+        },
+        {
+            "emoji": "🥦",
+            "EN": "Broccoli"
+        },
+        {
+            "emoji": "🧄",
+            "EN": "Garlic"
+        },
+        {
+            "emoji": "🧅",
+            "EN": "Onion"
+        },
+        {
+            "emoji": "🍄",
+            "EN": "Mushroom"
+        },
+        {
+            "emoji": "🥜",
+            "EN": "Peanut"
+        },
+        {
+            "emoji": "🍞",
+            "EN": "Bread"
+        },
+        {
+            "emoji": "🥐",
+            "EN": "Croissant"
+        },
+        {
+            "emoji": "🥨",
+            "EN": "Pretzel"
+        },
+        {
+            "emoji": "🥞",
+            "EN": "Pancakes"
+        },
+        {
+            "emoji": "🧇",
+            "EN": "Waffle"
+        },
+        {
+            "emoji": "🧀",
+            "EN": "Cheese"
+        },
+        {
+            "emoji": "🥩",
+            "EN": "Meat"
+        },
+        {
+            "emoji": "🥓",
+            "EN": "Bacon"
+        },
+        {
+            "emoji": "🍔",
+            "EN": "Hamburger"
+        },
+        {
+            "emoji": "🍟",
+            "EN": "Fries"
+        },
+        {
+            "emoji": "🍕",
+            "EN": "Pizza"
+        },
+        {
+            "emoji": "🌭",
+            "EN": "Hot Dog"
+        },
+        {
+            "emoji": "🌮",
+            "EN": "Taco"
+        },
+        {
+            "emoji": "🌯",
+            "EN": "Burrito"
+        },
+        {
+            "emoji": "🥚",
+            "EN": "Egg"
+        }
+    ]
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+//import { useEffect } from 'react';
 import './App.css';
+import Game from './components/Game';
+// import { collection, getDocs } from 'firebase/firestore/lite';
+// import { useEffect } from 'react';
+// import { db } from './utils/firebase';
 
 function App() {
+  // async function getUsers() {
+  //   const users =  await getDocs(collection(db, "users"));
+  //   users.forEach((doc) => {
+  //     console.log(doc.id, doc.data());
+  //   })
+  // }
+
+   //useEffect(() =>  {
+  //   getUsers()
+  
+   //},[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Game/>
     </div>
   );
 }
