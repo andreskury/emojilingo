@@ -1,6 +1,8 @@
 //import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Game from './components/Game';
+import { loadVoicesWhenAvailable } from './utils/utils';
 // import { collection, getDocs } from 'firebase/firestore/lite';
 // import { useEffect } from 'react';
 // import { db } from './utils/firebase';
@@ -13,14 +15,20 @@ function App() {
   //   })
   // }
 
-   //useEffect(() =>  {
+  //useEffect(() =>  {
   //   getUsers()
-  
-   //},[])
+
+  //},[])
+
+  const [voiceReady, setVoiceReady] = useState(false)
+
+  useEffect(() => {
+    loadVoicesWhenAvailable(()=>setVoiceReady(true))
+  }, []);
 
   return (
     <div className="App">
-      <Game/>
+      <Game voiceReady={voiceReady} />
     </div>
   );
 }

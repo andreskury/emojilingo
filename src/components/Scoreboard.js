@@ -1,38 +1,63 @@
 
-import { Card, CardContent, Grid, styled, Typography } from "@mui/material";
-import { useSelector } from "react-redux";
+import { Button, Grid, styled, Typography } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { resetGame } from "../redux/actions/gameActions";
+import wording from '../utils/wording.json';
 
 const ImageWrapper = styled('img')(() => ({
     width: '50%'
-  }));
+}));
 
-  const CardWrapper = styled(Card)((props) => ({
-    //backgroundColor: props.question === 'correct' ? 'green' : 'red'
-  }));
+const Container = styled(Grid)(() => ({
+    padding: '20px',
+    height: 'fit-content',
+    minHeight: '100vh'
+}));
 
-const AnswerCard = (props) =>{
-    let hex = props.question.emoji && props.question.emoji.codePointAt(0).toString(16)
-    return <CardWrapper sx={{ minWidth: 100 }} elevation={4}>
-                <CardContent>
-                <ImageWrapper src={`https://emojiapi.dev/api/v1/${hex}.svg`} alt={props.question.emoji}/>
-                    {props.question.result === 'incorrect' && <Typography><span style={{textDecoration: 'line-through'}}>{`${props.question.answer}`} </span>❌</Typography>}
-                    <Typography>{props.question.EN.toUpperCase()} {props.question.result === 'correct' && <span>✔️</span>}</Typography>
-                </CardContent>
-            </CardWrapper>
+const RoundBtn = styled(Button)(() => ({
+    width: '100px',
+    height: '100px',
+    borderRadius: 100,
+    fontWeight: 400,
+    fontSize: '4rem',
+    background: 'linear-gradient( 134.6deg,  #24C6DC 15.4%, #514A9D 74.7% )',
+    backgroundSize: '400% 400%',
+    animation: 'gradient 15s ease infinite',
+}));
+
+const Title = styled(Typography)(() => ({
+    background: 'linear-gradient( 134.6deg,  #40e0d0, #ff8c00, #ff0080 )',
+    backgroundSize: '400% 400%',
+    animation: 'gradient 15s ease infinite',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    fontWeight: 700
+}));
+
+const AnswerCard = (props) => {
+    let hex = props.emoji && props.emoji.codePointAt(0).toString(16)
+    return <div >
+        <ImageWrapper src={`https://emojiapi.dev/api/v1/${hex}.svg`} alt={props.emoji} />
+        {props.result === 'incorrect' && <Typography><span style={{ textDecoration: 'line-through' }}>{`${props.answer}`} </span>❌</Typography>}
+        <Typography>{props.question} {props.result === 'correct' && <span>✔️</span>}</Typography>
+
+    </div>
 }
 
-const Scoreboard = () =>{
-    const game = useSelector((state)=>state.game)
+const Scoreboard = () => {
+    const game = useSelector((state) => state.game)
+    const dispatch = useDispatch();
     const score = game.questions.filter((q) => q.result === 'correct').length
-    return <Grid container gap={5} alignItems="center" justifyContent="center">
-                {score === game.questions.length ? 
-                <Typography variant="h2">All correct! Awesome! 🤘</Typography>:
-                <Typography variant="h2">{`Correct answers: ${score}/${game.questions.length}`}</Typography>}
-                <Grid container gap={5} alignItems="center" justifyContent="center">
-                    {game.questions.map((question)=>
-                        <AnswerCard key={question.emoji} question={question}/>
-                        )}
-                </Grid>
-            </Grid>
+    return <Container container gap={5} alignItems="center" justifyContent="space-evenly" flexDirection="column">
+        {score === game.questions.length ?
+            <Title variant="h3">{wording[game?.language].congratulations}</Title> :
+            <Title variant="h3">{`${wording[game?.language].correct_answers}: ${score}/${game.questions.length}`}</Title>}
+        <RoundBtn variant="contained" color="info" size="large" onClick={() => dispatch(resetGame())}>↺</RoundBtn>
+        <Grid container gap={5} alignItems="center" justifyContent="center">
+            {game.questions.map((question) =>
+                <AnswerCard key={question.emoji} emoji={question.emoji} result={question.result} answer={question.answer} question={question[game?.language].toUpperCase()} />
+            )}
+        </Grid>
+    </Container>
 }
 export default Scoreboard;

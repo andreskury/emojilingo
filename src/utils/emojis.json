@@ -2,429 +2,959 @@
     "animals": [
         {
             "emoji": "🐒",
-            "EN": "Monkey"
+            "EN": "Monkey",
+            "ES": "Mono",
+            "IT": "Scimmia",
+            "FR": "Singe",
+            "PT": "Macaco",
+            "DE": "Affe"
         },
         {
             "emoji": "🐕",
-            "EN": "Dog"
+            "EN": "Dog",
+            "ES": "Perro",
+            "IT": "Cane",
+            "FR": "Chien",
+            "PT": "Cão",
+            "DE": "Hund"
         },
         {
             "emoji": "🦝",
-            "EN": "Raccoon"
+            "EN": "Raccoon",
+            "ES": "Mapache",
+            "IT": "Procione",
+            "FR": "Raton laveur",
+            "PT": "Guaxinim",
+            "DE": "Waschbär"
         },
         {
             "emoji": "🐈",
-            "EN": "Cat"
+            "EN": "Cat",
+            "ES": "Gato",
+            "IT": "Gatto",
+            "FR": "Chat",
+            "PT": "Gato",
+            "DE": "Katze"
         },
         {
             "emoji": "🐅",
-            "EN": "Tiger"
+            "EN": "Tiger",
+            "ES": "Tigre",
+            "IT": "Tigre",
+            "FR": "Tigre",
+            "PT": "Tigre",
+            "DE": "Tiger"
         },
         {
             "emoji": "🐎",
-            "EN": "Horse"
+            "EN": "Horse",
+            "ES": "Caballo",
+            "IT": "Cavallo",
+            "FR": "Cheval",
+            "PT": "Cavalo",
+            "DE": "Pferd"
         },
         {
             "emoji": "🦓",
-            "EN": "Zebra"
+            "EN": "Zebra",
+            "ES": "Cebra",
+            "IT": "Zebra",
+            "FR": "Zèbre",
+            "PT": "Zebra",
+            "DE": "Zebra"
         },
         {
             "emoji": "🦌",
-            "EN": "Deer"
+            "EN": "Deer",
+            "ES": "Ciervo",
+            "IT": "Cervo",
+            "FR": "Cerf",
+            "PT": "Cervo",
+            "DE": "Reh"
         },
         {
             "emoji": "🐄",
-            "EN": "Cow"
+            "EN": "Cow",
+            "ES": "Vaca",
+            "IT": "Mucca",
+            "FR": "Vache",
+            "PT": "Vaca",
+            "DE": "Kuh"
         },
         {
             "emoji": "🐖",
-            "EN": "Pig"
+            "EN": "Pig",
+            "ES": "Cerdo",
+            "IT": "Maiale",
+            "FR": "Porc",
+            "PT": "Porco",
+            "DE": "Schwein"
         },
         {
             "emoji": "🐑",
-            "EN": "Sheep"
+            "EN": "Sheep",
+            "ES": "Oveja",
+            "IT": "Pecora",
+            "FR": "Mouton",
+            "PT": "Ovelha",
+            "DE": "Schaf"
         },
         {
             "emoji": "🐐",
-            "EN": "Goat"
+            "EN": "Goat",
+            "ES": "Cabra",
+            "IT": "Capra",
+            "FR": "Chèvre",
+            "PT": "Bode",
+            "DE": "Ziege"
         },
         {
             "emoji": "🐫",
-            "EN": "Camel"
+            "EN": "Camel",
+            "ES": "Camello",
+            "IT": "Cammello",
+            "FR": "Chameau",
+            "PT": "Camelo",
+            "DE": "Kamel"
         },
         {
             "emoji": "🦙",
-            "EN": "Llama"
+            "EN": "Llama",
+            "ES": "Llama",
+            "IT": "Lama",
+            "FR": "Lama",
+            "PT": "Lhama",
+            "DE": "Lama"
         },
         {
             "emoji": "🦒",
-            "EN": "Giraffe"
+            "EN": "Giraffe",
+            "ES": "Jirafa",
+            "IT": "Giraffa",
+            "FR": "Girafe",
+            "PT": "Girafa",
+            "DE": "Giraffe"
         },
         {
             "emoji": "🐘",
-            "EN": "Elephant"
+            "EN": "Elephant",
+            "ES": "Elefante",
+            "IT": "Elefante",
+            "FR": "L'éléphant",
+            "PT": "Elefante",
+            "DE": "Elefant"
         },
         {
             "emoji": "🦏",
-            "EN": "Rhinoceros"
+            "EN": "Rhinoceros",
+            "ES": "Rinoceronte",
+            "IT": "Rinoceronte",
+            "FR": "Rhinocéros",
+            "PT": "Rinoceronte",
+            "DE": "Nashorn"
         },
         {
             "emoji": "🦛",
-            "EN": "Hippopotamus"
+            "EN": "Hippopotamus",
+            "ES": "Hipopótamo",
+            "IT": "Ippopotamo",
+            "FR": "Hippopotame",
+            "PT": "Hipopótamo",
+            "DE": "Nilpferd"
         },
         {
             "emoji": "🐁",
-            "EN": "Mouse"
+            "EN": "Mouse",
+            "ES": "Ratón",
+            "IT": "Topo",
+            "FR": "Souris",
+            "PT": "Mouse",
+            "DE": "Maus"
         },
         {
             "emoji": "🐇",
-            "EN": "Rabbit"
+            "EN": "Rabbit",
+            "ES": "Conejo",
+            "IT": "Coniglio",
+            "FR": "Lapin",
+            "PT": "Coelho",
+            "DE": "Kaninchen"
         },
         {
             "emoji": "🦫",
-            "EN": "Beaver"
+            "EN": "Beaver",
+            "ES": "Castor",
+            "IT": "Castoro",
+            "FR": "Castor",
+            "PT": "Castor",
+            "DE": "Biber"
         },
         {
             "emoji": "🦔",
-            "EN": "Hedgehog"
+            "EN": "Hedgehog",
+            "ES": "Erizo",
+            "IT": "Riccio",
+            "FR": "Hérisson",
+            "PT": "Ouriço",
+            "DE": "Igel"
         },
         {
             "emoji": "🦇",
-            "EN": "Bat"
+            "EN": "Bat",
+            "ES": "Murciélago",
+            "IT": "Pipistrello",
+            "FR": "Chauve souris",
+            "PT": "Bastão",
+            "DE": "Schläger"
         },
         {
             "emoji": "🦨",
-            "EN": "Skunk"
+            "EN": "Skunk",
+            "ES": "Zorrillo",
+            "IT": "Puzzola",
+            "FR": "Moufette",
+            "PT": "Skunk",
+            "DE": "Skunk"
         },
         {
             "emoji": "🦘",
-            "EN": "Kangaroo"
+            "EN": "Kangaroo",
+            "ES": "Canguro",
+            "IT": "Canguro",
+            "FR": "Kangourou",
+            "PT": "Canguru",
+            "DE": "Känguru"
         },
         {
             "emoji": "🦃",
-            "EN": "Turkey"
+            "EN": "Turkey",
+            "ES": "Pavo",
+            "IT": "Tacchino",
+            "FR": "Dinde",
+            "PT": "Peru",
+            "DE": "Truthahn"
         },
         {
             "emoji": "🦡",
-            "EN": "Badger"
+            "EN": "Badger",
+            "ES": "Tejón",
+            "IT": "Tasso",
+            "FR": "Blaireau",
+            "PT": "Texugo",
+            "DE": "Dachs"
         },
         {
             "emoji": "🐓",
-            "EN": "Rooster"
+            "EN": "Rooster",
+            "ES": "Gallo",
+            "IT": "Gallo",
+            "FR": "Le coq",
+            "PT": "Galo",
+            "DE": "Hahn"
         },
         {
             "emoji": "🕊️",
-            "EN": "Dove"
+            "EN": "Dove",
+            "ES": "Paloma",
+            "IT": "Colomba",
+            "FR": "Colombe",
+            "PT": "Pomba",
+            "DE": "Taube"
         },
         {
             "emoji": "🦅",
-            "EN": "Eagle"
+            "EN": "Eagle",
+            "ES": "Águila",
+            "IT": "Aquila",
+            "FR": "Aigle",
+            "PT": "Águia",
+            "DE": "Adler"
         },
         {
             "emoji": "🦆",
-            "EN": "Duck"
+            "EN": "Duck",
+            "ES": "Pato",
+            "IT": "Anatra",
+            "FR": "Canard",
+            "PT": "Pato",
+            "DE": "Ente"
         },
         {
             "emoji": "🦢",
-            "EN": "Swan"
+            "EN": "Swan",
+            "ES": "Cisne",
+            "IT": "Cigno",
+            "FR": "Cygne",
+            "PT": "Cisne",
+            "DE": "Schwan"
         },
         {
             "emoji": "🦉",
-            "EN": "Owl"
+            "EN": "Owl",
+            "ES": "Búho",
+            "IT": "Gufo",
+            "FR": "Hibou",
+            "PT": "Coruja",
+            "DE": "Eule"
         },
         {
             "emoji": "🦩",
-            "EN": "Flamingo"
+            "EN": "Flamingo",
+            "ES": "Flamenco",
+            "IT": "Fenicottero",
+            "FR": "Flamant",
+            "PT": "Flamingo",
+            "DE": "Flamingo"
         },
         {
             "emoji": "🦚",
-            "EN": "Peacock"
+            "EN": "Peacock",
+            "ES": "Pavo real",
+            "IT": "Pavone",
+            "FR": "Paon",
+            "PT": "Pavão",
+            "DE": "Pfau"
         },
         {
             "emoji": "🦜",
-            "EN": "Parrot"
+            "EN": "Parrot",
+            "ES": "Loro",
+            "IT": "Pappagallo",
+            "FR": "Perroquet",
+            "PT": "Papagaio",
+            "DE": "Papagei"
         },
         {
             "emoji": "🐊",
-            "EN": "Crocodile"
+            "EN": "Crocodile",
+            "ES": "Cocodrilo",
+            "IT": "Coccodrillo",
+            "FR": "Crocodile",
+            "PT": "Crocodilo",
+            "DE": "Krokodil"
         },
         {
             "emoji": "🐢",
-            "EN": "Turtle"
+            "EN": "Turtle",
+            "ES": "Tortuga",
+            "IT": "Tartaruga",
+            "FR": "Tortue",
+            "PT": "Tartaruga",
+            "DE": "Schildkröte"
         },
         {
             "emoji": "🦎",
-            "EN": "Lizard"
+            "EN": "Lizard",
+            "ES": "Lagarto",
+            "IT": "Lucertola",
+            "FR": "Lézard",
+            "PT": "Lagarto",
+            "DE": "Eidechse"
         },
         {
             "emoji": "🐍",
-            "EN": "Snake"
+            "EN": "Snake",
+            "ES": "Serpiente",
+            "IT": "Serpente",
+            "FR": "Serpent",
+            "PT": "Cobra",
+            "DE": "Schlange"
         },
         {
             "emoji": "🐋",
-            "EN": "Whale"
+            "EN": "Whale",
+            "ES": "Ballena",
+            "IT": "Balena",
+            "FR": "Baleine",
+            "PT": "Baleia",
+            "DE": "Wal"
         },
         {
             "emoji": "🐬",
-            "EN": "Dolphin"
+            "EN": "Dolphin",
+            "ES": "Delfín",
+            "IT": "Delfino",
+            "FR": "Dauphin",
+            "PT": "Golfinho",
+            "DE": "Delfin"
         },
         {
             "emoji": "🦭",
-            "EN": "Seal"
+            "EN": "Seal",
+            "ES": "Foca",
+            "IT": "Foca",
+            "FR": "Phoque",
+            "PT": "Foca",
+            "DE": "Robbe"
         },
         {
             "emoji": "🦈",
-            "EN": "Shark"
+            "EN": "Shark",
+            "ES": "Tiburón",
+            "IT": "Squalo",
+            "FR": "Requin",
+            "PT": "Tubarão",
+            "DE": "Hai"
         },
         {
             "emoji": "🐌",
-            "EN": "Snail"
+            "EN": "Snail",
+            "ES": "Caracol",
+            "IT": "Lumaca",
+            "FR": "Escargot",
+            "PT": "Caracol",
+            "DE": "Schnecke"
         },
         {
             "emoji": "🦋",
-            "EN": "Butterfly"
+            "EN": "Butterfly",
+            "ES": "Mariposa",
+            "IT": "Farfalla",
+            "FR": "Papillon",
+            "PT": "Borboleta",
+            "DE": "Schmetterling"
         },
         {
             "emoji": "🐜",
-            "EN": "Ant"
+            "EN": "Ant",
+            "ES": "Hormiga",
+            "IT": "Formica",
+            "FR": "Fourmi",
+            "PT": "Formiga",
+            "DE": "Ameise"
         },
         {
             "emoji": "🐝",
-            "EN": "Bee"
+            "EN": "Bee",
+            "ES": "Abeja",
+            "IT": "Ape",
+            "FR": "Abeille",
+            "PT": "Abelha",
+            "DE": "Biene"
         },
         {
             "emoji": "🦗",
-            "EN": "Cricket"
+            "EN": "Cricket",
+            "ES": "Grillo",
+            "IT": "Cricket",
+            "FR": "Criquet",
+            "PT": "Grilo",
+            "DE": "Kricket"
         },
         {
             "emoji": "🪳",
-            "EN": "Cockroach"
+            "EN": "Cockroach",
+            "ES": "Cucaracha",
+            "IT": "Scarafaggio",
+            "FR": "Cafard",
+            "PT": "Barata",
+            "DE": "Kakerlake"
         },
         {
             "emoji": "🕷️",
-            "EN": "Spider"
+            "EN": "Spider",
+            "ES": "Araña",
+            "IT": "Ragno",
+            "FR": "Araignée",
+            "PT": "Aranha",
+            "DE": "Spinne"
         },
         {
             "emoji": "🦂",
-            "EN": "Scorpion"
+            "EN": "Scorpion",
+            "ES": "Escorpión",
+            "IT": "Scorpione",
+            "FR": "Scorpion",
+            "PT": "Escorpião",
+            "DE": "Skorpion"
         },
         {
             "emoji": "🦟",
-            "EN": "Mosquito"
+            "EN": "Mosquito",
+            "ES": "Mosquito",
+            "IT": "Zanzara",
+            "FR": "Moustique",
+            "PT": "Mosquito",
+            "DE": "Moskito"
         },
         {
             "emoji": "🪰",
-            "EN": "Fly"
+            "EN": "Fly",
+            "ES": "Mosca",
+            "IT": "Mosca",
+            "FR": "Mouche",
+            "PT": "Mosca",
+            "DE": "Zweiflügler"
         },
         {
             "emoji": "🪱",
-            "EN": "Worm"
+            "EN": "Worm",
+            "ES": "Gusano",
+            "IT": "Verme",
+            "FR": "Ver",
+            "PT": "Verme",
+            "DE": "Wurm"
         },
         {
             "emoji": "🦀",
-            "EN": "Crab"
+            "EN": "Crab",
+            "ES": "Cangrejo",
+            "IT": "Granchio",
+            "FR": "Crabe",
+            "PT": "Caranguejo",
+            "DE": "Krabbe"
         },
         {
             "emoji": "🦞",
-            "EN": "Lobster"
+            "EN": "Lobster",
+            "ES": "Langosta",
+            "IT": "Aragosta",
+            "FR": "Homard",
+            "PT": "Lagosta",
+            "DE": "Hummer"
         },
         {
             "emoji": "🦐",
-            "EN": "Shrimp"
+            "EN": "Shrimp",
+            "ES": "Camarón",
+            "IT": "Gamberetto",
+            "FR": "Crevette",
+            "PT": "Camarão",
+            "DE": "Garnele"
         },
         {
             "emoji": "🦑",
-            "EN": "Squid"
+            "EN": "Squid",
+            "ES": "Calamar",
+            "IT": "Calamaro",
+            "FR": "Calmar",
+            "PT": "Lula",
+            "DE": "Tintenfisch"
         }
     ],
     "food": [
         {
             "emoji": "🍇",
-            "EN": "Grapes"
+            "EN": "Grapes",
+            "ES": "Uvas",
+            "IT": "Uva",
+            "FR": "Raisins",
+            "PT": "Uvas",
+            "DE": "Weintrauben"
         },
         {
             "emoji": "🍈",
-            "EN": "Melon"
+            "EN": "Melon",
+            "ES": "Melón",
+            "IT": "Melone",
+            "FR": "Melon",
+            "PT": "Melão",
+            "DE": "Melone"
         },
         {
             "emoji": "🍉",
-            "EN": "Watermelon"
+            "EN": "Watermelon",
+            "ES": "Sandía",
+            "IT": "Anguria",
+            "FR": "Pastèque",
+            "PT": "Melancia",
+            "DE": "Wassermelone"
         },
         {
             "emoji": "🍊",
-            "EN": "Tangerine"
+            "EN": "Tangerine",
+            "ES": "Mandarina",
+            "IT": "Mandarino",
+            "FR": "Mandarine",
+            "PT": "Tangerina",
+            "DE": "Mandarine"
         },
         {
             "emoji": "🍋",
-            "EN": "Lemon"
+            "EN": "Lemon",
+            "ES": "Limón",
+            "IT": "Limone",
+            "FR": "Citron",
+            "PT": "Limão",
+            "DE": "Zitrone"
         },
         {
             "emoji": "🍌",
-            "EN": "Banana"
+            "EN": "Banana",
+            "ES": "Banana",
+            "IT": "Banana",
+            "FR": "Banane",
+            "PT": "Banana",
+            "DE": "Banane"
         },
         {
             "emoji": "🍍",
-            "EN": "Pineapple"
+            "EN": "Pineapple",
+            "ES": "Piña",
+            "IT": "Ananas",
+            "FR": "Ananas",
+            "PT": "Abacaxi",
+            "DE": "Ananas"
         },
         {
             "emoji": "🥭",
-            "EN": "Mango"
+            "EN": "Mango",
+            "ES": "Mango",
+            "IT": "Mango",
+            "FR": "Mangue",
+            "PT": "Manga",
+            "DE": "Mango"
         },
         {
             "emoji": "🍎",
-            "EN": "Apple"
+            "EN": "Apple",
+            "ES": "Manzana",
+            "IT": "Mela",
+            "FR": "Pomme",
+            "PT": "Maçã",
+            "DE": "Apfel"
         },
         {
             "emoji": "🍐",
-            "EN": "Pear"
+            "EN": "Pear",
+            "ES": "Pera",
+            "IT": "Pera",
+            "FR": "Poire",
+            "PT": "Pera",
+            "DE": "Birne"
         },
         {
             "emoji": "🍑",
-            "EN": "Peach"
+            "EN": "Peach",
+            "ES": "Durazno",
+            "IT": "Pesca",
+            "FR": "pêche",
+            "PT": "Pêssego",
+            "DE": "Pfirsich"
         },
         {
             "emoji": "🍒",
-            "EN": "Cherries"
+            "EN": "Cherries",
+            "ES": "Cerezas",
+            "IT": "Ciliegie",
+            "FR": "Cerises",
+            "PT": "Cerejas",
+            "DE": "Kirschen"
         },
         {
             "emoji": "🍓",
-            "EN": "Strawberry"
+            "EN": "Strawberry",
+            "ES": "Fresa",
+            "IT": "Fragola",
+            "FR": "Fraise",
+            "PT": "Morango",
+            "DE": "Erdbeere"
         },
         {
             "emoji": "🫐",
-            "EN": "Blueberries"
+            "EN": "Blueberries",
+            "ES": "Arándanos",
+            "IT": "Mirtilli",
+            "FR": "Myrtilles",
+            "PT": "Amoras",
+            "DE": "Blaubeeren"
         },
         {
             "emoji": "🥝",
-            "EN": "Kiwi"
+            "EN": "Kiwi",
+            "ES": "Kiwi",
+            "IT": "Kiwi",
+            "FR": "Kiwi",
+            "PT": "Kiwi",
+            "DE": "Kiwi"
         },
         {
             "emoji": "🍅",
-            "EN": "Tomato"
+            "EN": "Tomato",
+            "ES": "Tomate",
+            "IT": "Pomodoro",
+            "FR": "Tomate",
+            "PT": "Tomate",
+            "DE": "Tomate"
         },
         {
             "emoji": "🫒",
-            "EN": "Olive"
+            "EN": "Olive",
+            "ES": "Aceituna",
+            "IT": "Oliva",
+            "FR": "Olive",
+            "PT": "Oliva",
+            "DE": "Olive"
         },
         {
             "emoji": "🥥",
-            "EN": "Coconut"
+            "EN": "Coconut",
+            "ES": "Coco",
+            "IT": "Noce di cocco",
+            "FR": "Noix de coco",
+            "PT": "Coco",
+            "DE": "Kokosnuss"
         },
         {
             "emoji": "🥑",
-            "EN": "Avocado"
+            "EN": "Avocado",
+            "ES": "Palta",
+            "IT": "Avocado",
+            "FR": "Avocat",
+            "PT": "Abacate",
+            "DE": "Avocado"
         },
         {
             "emoji": "🍆",
-            "EN": "Eggplant"
+            "EN": "Eggplant",
+            "ES": "Berenjena",
+            "IT": "Melanzana",
+            "FR": "Aubergine",
+            "PT": "Beringela",
+            "DE": "Aubergine"
         },
         {
             "emoji": "🥔",
-            "EN": "Potato"
+            "EN": "Potato",
+            "ES": "Papa",
+            "IT": "Patata",
+            "FR": "Pomme de terre",
+            "PT": "Batata",
+            "DE": "Kartoffel"
         },
         {
             "emoji": "🥕",
-            "EN": "Carrot"
+            "EN": "Carrot",
+            "ES": "Zanahoria",
+            "IT": "Carota",
+            "FR": "Carotte",
+            "PT": "Cenoura",
+            "DE": "Karotte"
         },
         {
             "emoji": "🌽",
-            "EN": "Corn"
+            "EN": "Corn",
+            "ES": "Maíz",
+            "IT": "Mais",
+            "FR": "Maïs",
+            "PT": "Milho",
+            "DE": "Mais"
         },
         {
             "emoji": "🌶️",
-            "EN": "Chilli Pepper"
+            "EN": "Chilli Pepper",
+            "ES": "Pimiento picante",
+            "IT": "Peperoncino",
+            "FR": "Piment",
+            "PT": "Pimenta Chili",
+            "DE": "Chili-Pfeffer"
         },
         {
             "emoji": "🫑",
-            "EN": "Bell Pepper"
+            "EN": "Bell Pepper",
+            "ES": "Pimiento morrón",
+            "IT": "Peperone",
+            "FR": "Poivron",
+            "PT": "Pimentão",
+            "DE": "Paprika"
         },
         {
             "emoji": "🥒",
-            "EN": "Cucumber"
+            "EN": "Cucumber",
+            "ES": "Pepino",
+            "IT": "Cetriolo",
+            "FR": "Concombre",
+            "PT": "Pepino",
+            "DE": "Gurke"
         },
         {
             "emoji": "🥬",
-            "EN": "Lettuce"
+            "EN": "Lettuce",
+            "ES": "Lechuga",
+            "IT": "Lattuga",
+            "FR": "Salade",
+            "PT": "Alface",
+            "DE": "Grüner Salat"
         },
         {
             "emoji": "🥦",
-            "EN": "Broccoli"
+            "EN": "Broccoli",
+            "ES": "Brócoli",
+            "IT": "Broccoli",
+            "FR": "Brocoli",
+            "PT": "Brócolis",
+            "DE": "Brokkoli"
         },
         {
             "emoji": "🧄",
-            "EN": "Garlic"
+            "EN": "Garlic",
+            "ES": "Ajo",
+            "IT": "Aglio",
+            "FR": "Ail",
+            "PT": "Alho",
+            "DE": "Knoblauch"
         },
         {
             "emoji": "🧅",
-            "EN": "Onion"
+            "EN": "Onion",
+            "ES": "Cebolla",
+            "IT": "Cipolla",
+            "FR": "Oignon",
+            "PT": "Cebola",
+            "DE": "Zwiebel"
         },
         {
             "emoji": "🍄",
-            "EN": "Mushroom"
+            "EN": "Mushroom",
+            "ES": "Champiñón",
+            "IT": "Fungo",
+            "FR": "Champignon",
+            "PT": "Cogumelo",
+            "DE": "Pilz"
         },
         {
             "emoji": "🥜",
-            "EN": "Peanut"
+            "EN": "Peanut",
+            "ES": "Maní",
+            "IT": "Arachidi",
+            "FR": "Cacahuète",
+            "PT": "Amendoim",
+            "DE": "Erdnuss"
         },
         {
             "emoji": "🍞",
-            "EN": "Bread"
+            "EN": "Bread",
+            "ES": "Pan",
+            "IT": "Pane",
+            "FR": "Pain",
+            "PT": "Pão",
+            "DE": "Brot"
         },
         {
             "emoji": "🥐",
-            "EN": "Croissant"
+            "EN": "Croissant",
+            "ES": "Cuerno",
+            "IT": "Brioche",
+            "FR": "Croissant",
+            "PT": "Croissant",
+            "DE": "Croissant"
         },
         {
             "emoji": "🥨",
-            "EN": "Pretzel"
+            "EN": "Pretzel",
+            "ES": "Pretzel",
+            "IT": "Pretzel",
+            "FR": "Bretzel",
+            "PT": "Pretzel",
+            "DE": "Brezel"
         },
         {
             "emoji": "🥞",
-            "EN": "Pancakes"
+            "EN": "Pancakes",
+            "ES": "Panqueques",
+            "IT": "Pancakes",
+            "FR": "Crêpes",
+            "PT": "Panquecas",
+            "DE": "Pfannkuchen"
         },
         {
             "emoji": "🧇",
-            "EN": "Waffle"
+            "EN": "Waffle",
+            "ES": "Gofre",
+            "IT": "Cialda",
+            "FR": "Gaufre",
+            "PT": "Waffle",
+            "DE": "Waffel"
         },
         {
             "emoji": "🧀",
-            "EN": "Cheese"
+            "EN": "Cheese",
+            "ES": "Queso",
+            "IT": "Formaggio",
+            "FR": "Fromage",
+            "PT": "Queijo",
+            "DE": "Käse"
         },
         {
             "emoji": "🥩",
-            "EN": "Meat"
+            "EN": "Meat",
+            "ES": "Carne",
+            "IT": "Carne",
+            "FR": "Viande",
+            "PT": "Carne",
+            "DE": "Fleisch"
         },
         {
             "emoji": "🥓",
-            "EN": "Bacon"
+            "EN": "Bacon",
+            "ES": "Tocino",
+            "IT": "Bacon",
+            "FR": "Bacon",
+            "PT": "Bacon",
+            "DE": "Speck"
         },
         {
             "emoji": "🍔",
-            "EN": "Hamburger"
+            "EN": "Hamburger",
+            "ES": "Hamburguesa",
+            "IT": "Hamburger",
+            "FR": "Hamburger",
+            "PT": "Hamburger",
+            "DE": "Hamburger"
         },
         {
             "emoji": "🍟",
-            "EN": "Fries"
+            "EN": "Fries",
+            "ES": "Papas fritas",
+            "IT": "Patatine fritte",
+            "FR": "Frites",
+            "PT": "Fritas",
+            "DE": "Pommes"
         },
         {
             "emoji": "🍕",
-            "EN": "Pizza"
+            "EN": "Pizza",
+            "ES": "Pizza",
+            "IT": "Pizza",
+            "FR": "Pizza",
+            "PT": "Pizza",
+            "DE": "Pizza"
         },
         {
             "emoji": "🌭",
-            "EN": "Hot Dog"
+            "EN": "Hot Dog",
+            "ES": "Pancho",
+            "IT": "Hot dog",
+            "FR": "Hot dog",
+            "PT": "Cachorro quente",
+            "DE": "Hotdog"
         },
         {
             "emoji": "🌮",
-            "EN": "Taco"
+            "EN": "Taco",
+            "ES": "taco",
+            "IT": "Taco",
+            "FR": "Taco",
+            "PT": "Taco",
+            "DE": "Taco"
         },
         {
             "emoji": "🌯",
-            "EN": "Burrito"
+            "EN": "Burrito",
+            "ES": "Burrito",
+            "IT": "Burrito",
+            "FR": "Burrito",
+            "PT": "Burro",
+            "DE": "Burritos"
         },
         {
             "emoji": "🥚",
-            "EN": "Egg"
+            "EN": "Egg",
+            "ES": "Huevo",
+            "IT": "Uovo",
+            "FR": "Œuf",
+            "PT": "Ovo",
+            "DE": "Ei"
         }
     ]
 }

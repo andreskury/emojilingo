@@ -1,12 +1,16 @@
 //import { SHOW_LOADING, HIDE_LOADING } from "../actions/types";
-const initialState = { 
+const initialState = {
   loaded: false,
+  startGame: false,
+  imgCacheReady: false,
   collection: "",
+  language: "",
+  locale: "",
   questions: [{
     emoji: "",
-    EN:"",
-    answer:"",
-    result:""
+    EN: "",
+    answer: "",
+    result: ""
   }],
   currentQuestion: 0
 
@@ -17,14 +21,19 @@ export default function gameReducer(state = initialState, action) {
       return {
         ...state,
         questions: state.questions.map(
-          (question, i) => i === action.payload.index ? {...question, answer: action.payload.answer, result: action.payload.result}
-                                  : question
-      )
+          (question, i) => i === action.payload.index ? { ...question, answer: action.payload.answer, result: action.payload.result }
+            : question
+        )
       };
     case 'NEXT_QUESTION':
       return {
         ...state,
-        currentQuestion: state.currentQuestion+1
+        currentQuestion: state.currentQuestion + 1
+      };
+    case 'START_GAME':
+      return {
+        ...state,
+        startGame: true
       };
     case 'NEW_GAME':
       return {
@@ -33,6 +42,19 @@ export default function gameReducer(state = initialState, action) {
         questions: action.payload.questions,
         currentQuestion: 0
       };
+    case 'IMG_CACHE_READY':
+      return {
+        ...state,
+        imgCacheReady: true
+      };
+      case 'SET_LANGUAGE':
+        return {
+          ...state,
+          language: action.payload.language,
+          locale: action.payload.locale
+        };
+    case 'RESET_GAME':
+      return initialState;
     default:
       return state;
   }

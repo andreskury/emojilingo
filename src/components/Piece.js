@@ -3,7 +3,7 @@ import { styled } from "@mui/material";
 import {  useSelector } from "react-redux";
 
   const ImageWrapper = styled('img')(() => ({
-    width: '50vh'
+    width: '48vh'
   }));
   
   const PieceWrapper = styled('div')((props) => ({

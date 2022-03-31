@@ -1,18 +1,19 @@
 import Board from "./Board";
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Loading from "./Loading";
 import Scoreboard from "./Scoreboard";
 import Intro from "./Intro";
-import Picker from "./Picker";
+import Category from "./Category";
+import { imgCacheReady } from "../redux/actions/gameActions";
+import Language from "./Language";
 
-const Game = () =>{
+const Game = (props) =>{
     const game = useSelector((state)=>state.game)
-    const [imgCacheReady, setImgCacheReady] = useState(false)
-    const [startGame, setStartGame] = useState(false)
+    const dispatch = useDispatch()
 
     useEffect(()=>{
-        if(game.collection !== '' && !imgCacheReady){
+        if(game.collection !== '' && !game.imgCacheReady){
             const cacheImages = async () =>{
                 try {
                 const promises = await game.questions.map((question) =>
@@ -29,19 +30,26 @@ const Game = () =>{
                     })
                 )
                 await Promise.all(promises)
-                setImgCacheReady(true)
+                dispatch(imgCacheReady())
                 } catch(e) {
                     console.log(e);
                 }
             }
             cacheImages()
         }
-    },[game, imgCacheReady])
+    },[dispatch, game])
     return <>
-        {imgCacheReady ? <>{
-            game?.currentQuestion >= game?.questions.length ? <Scoreboard/> :
-            startGame ? <Board game={game}/> : <Intro setStartGame={setStartGame} collection={game.collection}/>
-            }</> : game.collection ? <Loading/> : <Picker/>}
+        {game?.language ? 
+            game?.imgCacheReady ? 
+                game?.currentQuestion >= game?.questions.length ? 
+                    <Scoreboard/> :
+                    game?.startGame ? 
+                        <Board game={game}/> :
+                        <Intro collection={game.collection}/> : 
+                    game.collection || !props.voiceReady ?
+                <Loading/> : 
+            <Category/> :
+        <Language/>}
         
     </>
 }
