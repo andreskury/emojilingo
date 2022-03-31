@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Game from './components/Game';
 import { loadVoicesWhenAvailable } from './utils/utils';
+import cacheBuster from './utils/cacheBuster';
 // import { collection, getDocs } from 'firebase/firestore/lite';
 // import { useEffect } from 'react';
 // import { db } from './utils/firebase';
@@ -15,10 +16,9 @@ function App() {
   //   })
   // }
 
-  //useEffect(() =>  {
-  //   getUsers()
-
-  //},[])
+  useEffect(() =>  {
+    cacheBuster()
+  },[])
 
   const [voiceReady, setVoiceReady] = useState(false)
 

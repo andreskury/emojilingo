@@ -22,7 +22,6 @@ export function loadVoicesWhenAvailable(onComplete = () => { }) {
     const voices = _speechSynth.getVoices()
     if (voices.length !== 0 || _retry >= 3) {
         _voices = voices
-        console.log(voices)
         onComplete()
     } else {
         return setTimeout(() => { _retry++; loadVoicesWhenAvailable(onComplete) }, 1000)
