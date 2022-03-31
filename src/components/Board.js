@@ -59,7 +59,7 @@ const Board = (props) => {
                 setDisableEnter(false)
             }, 300);
         }
-    }, [disableEnter, dispatch, pieceInput, props.game?.currentQuestion, props.game?.language, props.game?.locale, props.game?.questions, props.game?.voice])
+    }, [disableEnter, dispatch, pieceInput, props.game?.currentQuestion, props.game?.language, props.game?.locale, props.game?.questions])
 
     // useEffect(() => {
     //     const handleSubmit = (e) => {
