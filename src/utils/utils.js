@@ -1,51 +1,53 @@
 export const getRandom = ({ collection, amount = 10 }) => {
-    const length = collection.length
-    let collected = []
-    let arr = []
-    while (arr.length < amount) {
-        let r = Math.floor(Math.random() * length)
-        if (arr.indexOf(r) === -1) {
-            arr.push(r)
-            collected.push(collection[r])
-        }
+  const { length } = collection;
+  const collected = [];
+  const arr = [];
+  while (arr.length < amount) {
+    const r = Math.floor(Math.random() * length);
+    if (arr.indexOf(r) === -1) {
+      arr.push(r);
+      collected.push(collection[r]);
     }
-    return collected;
-}
+  }
+  return collected;
+};
 
-let _speechSynth
-let _voices
-let _retry = 0
-const _cache = {}
+let speechSynth;
+let voices;
+let retry = 0;
+const cache = {};
 
 export function loadVoicesWhenAvailable(onComplete = () => { }) {
-    _speechSynth = window.speechSynthesis
-    const voices = _speechSynth.getVoices()
-    if (voices.length !== 0 || _retry >= 3) {
-        _voices = voices
-        onComplete()
-    } else {
-        return setTimeout(() => { _retry++; loadVoicesWhenAvailable(onComplete) }, 1000)
-    }
+  speechSynth = window.speechSynthesis;
+  const gotVoices = speechSynth.getVoices();
+  if (gotVoices.length !== 0 || retry >= 3) {
+    voices = gotVoices;
+    onComplete();
+  } else {
+    return setTimeout(() => { retry += 1; loadVoicesWhenAvailable(onComplete); }, 1000);
+  }
+  return null;
 }
 
 function getVoices(locale) {
-    if (_cache[locale]) return _cache[locale]
+  if (cache[locale]) return cache[locale];
 
-    _cache[locale] = _voices.filter(voice => voice.lang === locale)
-    return _cache[locale]
+  cache[locale] = voices.filter((voice) => voice.lang === locale);
+  return cache[locale];
 }
 
 export function playByText(locale, text) {
-    if (!_speechSynth) {
-        console.error('Browser does not support speech synthesis')
-        return
-    }
-    const voices = getVoices(locale)
-    const utterance = new window.SpeechSynthesisUtterance()
-    utterance.voice = voices[0]
-    utterance.text = text
-    utterance.lang = locale
+  if (!speechSynth) {
+    // eslint-disable-next-line no-console
+    console.error('Browser does not support speech synthesis');
+    return;
+  }
+  const localVoices = getVoices(locale);
+  const utterance = new window.SpeechSynthesisUtterance();
+  [utterance.voice] = localVoices;
+  utterance.text = text;
+  utterance.lang = locale;
 
-    _speechSynth.cancel()
-    _speechSynth.speak(utterance)
+  speechSynth.cancel();
+  speechSynth.speak(utterance);
 }

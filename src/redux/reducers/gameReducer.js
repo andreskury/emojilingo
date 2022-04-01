@@ -1,59 +1,57 @@
-//import { SHOW_LOADING, HIDE_LOADING } from "../actions/types";
+import {
+  ADD_ANSWER, IMG_CACHE_READY, NEW_GAME, NEXT_QUESTION, RESET_GAME, SET_LANGUAGE, START_GAME,
+} from '../actions/types';
+
 const initialState = {
   loaded: false,
   startGame: false,
   imgCacheReady: false,
-  collection: "",
-  language: "",
-  locale: "",
-  questions: [{
-    emoji: "",
-    EN: "",
-    answer: "",
-    result: ""
-  }],
-  currentQuestion: 0
+  collection: '',
+  language: '',
+  locale: '',
+  questions: [],
+  currentQuestion: 0,
 
 };
-export default function gameReducer(state = initialState, action) {
+export default function gameReducer(state = initialState, action = {}) {
   switch (action.type) {
-    case 'ADD_ANSWER':
+    case ADD_ANSWER:
       return {
         ...state,
         questions: state.questions.map(
-          (question, i) => i === action.payload.index ? { ...question, answer: action.payload.answer, result: action.payload.result }
-            : question
-        )
+          (question, i) => (i === action.payload.index ? { ...question, answer: action.payload.answer, result: action.payload.result }
+            : question),
+        ),
       };
-    case 'NEXT_QUESTION':
+    case NEXT_QUESTION:
       return {
         ...state,
-        currentQuestion: state.currentQuestion + 1
+        currentQuestion: state.currentQuestion + 1,
       };
-    case 'START_GAME':
+    case START_GAME:
       return {
         ...state,
-        startGame: true
+        startGame: true,
       };
-    case 'NEW_GAME':
+    case NEW_GAME:
       return {
         ...state,
         collection: action.payload.collection,
         questions: action.payload.questions,
-        currentQuestion: 0
+        currentQuestion: 0,
       };
-    case 'IMG_CACHE_READY':
+    case IMG_CACHE_READY:
       return {
         ...state,
-        imgCacheReady: true
+        imgCacheReady: true,
       };
-      case 'SET_LANGUAGE':
-        return {
-          ...state,
-          language: action.payload.language,
-          locale: action.payload.locale
-        };
-    case 'RESET_GAME':
+    case SET_LANGUAGE:
+      return {
+        ...state,
+        language: action.payload.language,
+        locale: action.payload.locale,
+      };
+    case RESET_GAME:
       return initialState;
     default:
       return state;

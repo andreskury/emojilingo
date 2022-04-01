@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
+import { Provider } from 'react-redux';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
 import store from './redux/store';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const theme = createTheme({
@@ -15,7 +16,7 @@ const theme = createTheme({
       'Roboto',
       '"Helvetica Neue"',
       'Arial',
-      'sans-serif'
+      'sans-serif',
     ].join(','),
   },
   palette: {
@@ -32,11 +33,13 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </ThemeProvider>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
