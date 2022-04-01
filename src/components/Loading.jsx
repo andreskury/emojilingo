@@ -16,7 +16,7 @@ export default function Loading() {
 
   return (
     <Background open={show}>
-      <img src="/1F32E.svg" alt="loading" />
+      <img src="/1F32E.svg" alt="loading" width={400} height={400} />
     </Background>
   );
 }
