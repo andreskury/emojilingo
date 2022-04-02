@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { resetGame, startGame } from '../redux/actions/gameActions';
 import { playByText } from '../utils/utils';
 import wording from '../utils/wording.json';
+import ExpandGrid from './ExpandGrid';
 
 const ImageWrapper = styled('img')(() => ({
   width: '50%',
@@ -33,7 +34,6 @@ const RoundBtn = styled(Button)(() => ({
 const Title = styled(Typography)(() => ({
   background: 'linear-gradient( 134.6deg,  #16A085 15.4%, #F4D03F 74.7% )',
   backgroundSize: '400% 400%',
-  animation: 'gradient 15s ease infinite',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   fontWeight: 700,
@@ -63,11 +63,11 @@ function Intro() {
   return (
     game?.collection && game?.imgCacheReady && (
     <Container container gap={5} alignItems="center" justifyContent="space-evenly" flexDirection="column">
-      <Title variant="h3">{wording[game?.language][game?.collection].toUpperCase()}</Title>
+      <Title variant="h3" className="gradient-text-expand">{wording[game?.language][game?.collection].toUpperCase()}</Title>
       <RoundBtn variant="contained" color="success" size="large" onClick={() => dispatch(startGame(navigate))}>Go!</RoundBtn>
-      <Grid container gap={5} alignItems="center" justifyContent="center">
+      <ExpandGrid container gap={5} alignItems="center" justifyContent="center">
         {game.questions.map((question) => <AnswerCard key={question.emoji} name={question[game.language]} emoji={question.emoji} />)}
-      </Grid>
+      </ExpandGrid>
     </Container>
     )
   );

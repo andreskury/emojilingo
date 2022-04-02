@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { resetGame } from '../redux/actions/gameActions';
 import wording from '../utils/wording.json';
+import ExpandGrid from './ExpandGrid';
 
 const ImageWrapper = styled('img')(() => ({
   width: '50%',
@@ -32,7 +33,6 @@ const RoundBtn = styled(Button)(() => ({
 const Title = styled(Typography)(() => ({
   background: 'linear-gradient( 134.6deg,  #40e0d0, #ff8c00, #ff0080 )',
   backgroundSize: '400% 400%',
-  animation: 'gradient 15s ease infinite',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   fontWeight: 700,
@@ -77,13 +77,13 @@ function Scoreboard() {
   return (
     game?.questions.length > 0 && (
     <Container container gap={5} alignItems="center" justifyContent="space-evenly" flexDirection="column">
-      {score === game.questions.length
-        ? <Title variant="h3">{wording[game?.language].congratulations}</Title>
-        : <Title variant="h3">{`${wording[game?.language].correct_answers}: ${score}/${game.questions.length}`}</Title>}
+      <Title variant="h3" className="gradient-text-expand">
+        {score === game.questions.length ? wording[game?.language].congratulations : `${wording[game?.language].correct_answers}: ${score}/${game.questions.length}`}
+      </Title>
       <RoundBtn variant="contained" color="info" size="large" onClick={() => dispatch(resetGame(navigate))}>↺</RoundBtn>
-      <Grid container gap={5} alignItems="center" justifyContent="center">
+      <ExpandGrid container gap={5} alignItems="center" justifyContent="center">
         {game.questions.map((question) => <AnswerCard key={question.emoji} emoji={question.emoji} result={question.result} answer={question.answer} question={question[game?.language].toUpperCase()} />)}
-      </Grid>
+      </ExpandGrid>
     </Container>
     )
   );

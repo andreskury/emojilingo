@@ -6,6 +6,7 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { setLanguage } from '../redux/actions/gameActions';
+import ExpandGrid from './ExpandGrid';
 
 const languages = [
   {
@@ -52,8 +53,8 @@ const CardWrapper = styled(Card)(() => ({
 }));
 
 const TitleWrapper = styled(Typography)(() => ({
-  animation: 'tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both',
   fontSize: '8vw',
+  maxWidth: '100vw',
   '@media (max-width: 600px)': {
     fontSize: '12vw',
   },
@@ -87,13 +88,13 @@ function Language() {
     !show
     && (
     <Grid container gap={5} alignItems="center" justifyContent="center" flexDirection="column" style={{ padding: '20px' }}>
-      <TitleWrapper variant="h3" style={{ maxWidth: '100vw' }}>
+      <TitleWrapper variant="h3" className="text-expand">
         <Title>Emojilingo</Title>
         ✨
       </TitleWrapper>
-      <Grid container item gap={5} alignItems="center" justifyContent="center" flexDirection="row" style={{ maxHeight: '75vh' }}>
+      <ExpandGrid container item gap={5} alignItems="center" justifyContent="center" flexDirection="row" style={{ maxHeight: '75vh' }}>
         {languages.map((l) => <AnswerCard key={l.language} emoji={l.emoji} title={l.title} onClick={() => dispatch(setLanguage({ language: l.language, locale: l.locale }, navigate))} />)}
-      </Grid>
+      </ExpandGrid>
     </Grid>
     )
   );

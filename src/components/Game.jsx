@@ -2,7 +2,6 @@ import { React, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Board from './Board';
-// import Loading from './Loading';
 import Scoreboard from './Scoreboard';
 import Intro from './Intro';
 import Category from './Category';
@@ -45,27 +44,13 @@ function Game() {
     if (game?.questions.length > 0 && game?.currentQuestion >= game?.questions.length) navigate('/scoreboard');
   }, [game?.currentQuestion, game?.questions]);
   return (
-    <>
-      <Routes>
-        <Route index element={<Language />} />
-        <Route path="category" element={<Category />} />
-        <Route path="intro" element={<Intro />} />
-        <Route path="board" element={<Board />} />
-        <Route path="scoreboard" element={<Scoreboard />} />
-      </Routes>
-      {/* {game?.language
-        ? game?.imgCacheReady
-          ? game?.currentQuestion >= game?.questions.length
-            ? <Scoreboard />
-            : game?.startGame
-              ? <Board />
-              : <Intro collection={game.collection} />
-          : game.collection || !props.voiceReady
-            ? <Loading />
-            : <Category />
-        : <Language />} */}
-
-    </>
+    <Routes>
+      <Route index element={<Language />} />
+      <Route path="category" element={<Category />} />
+      <Route path="intro" element={<Intro />} />
+      <Route path="board" element={<Board />} />
+      <Route path="scoreboard" element={<Scoreboard />} />
+    </Routes>
   );
 }
 export default Game;
