@@ -76,7 +76,7 @@ function Scoreboard() {
 
   return (
     game?.questions.length > 0 && (
-    <Container container gap={5} alignItems="center" justifyContent="space-evenly" flexDirection="column">
+    <Container container gap={5} alignItems="center" justifyContent="space-evenly" flexDirection="column" wrap="nowrap">
       <Title variant="h3" className="gradient-text-expand">
         {score === game.questions.length ? wording[game?.language].congratulations : `${wording[game?.language].correct_answers}: ${score}/${game.questions.length}`}
       </Title>

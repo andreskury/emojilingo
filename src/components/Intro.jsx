@@ -62,7 +62,7 @@ function Intro() {
 
   return (
     game?.collection && game?.imgCacheReady && (
-    <Container container gap={5} alignItems="center" justifyContent="space-evenly" flexDirection="column">
+    <Container container gap={5} alignItems="center" justifyContent="space-evenly" wrap="nowrap" flexDirection="column">
       <Title variant="h3" className="gradient-text-expand">{wording[game?.language][game?.collection].toUpperCase()}</Title>
       <RoundBtn variant="contained" color="success" size="large" onClick={() => dispatch(startGame(navigate))}>Go!</RoundBtn>
       <ExpandGrid container gap={5} alignItems="center" justifyContent="center">

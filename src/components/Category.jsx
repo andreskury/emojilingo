@@ -48,7 +48,7 @@ function Category() {
 
   return (
     game?.language && (
-    <Grid container gap={5} alignItems="center" justifyContent="center" flexDirection="column" style={{ padding: '20px' }}>
+    <Grid container gap={5} alignItems="center" justifyContent="center" flexDirection="column" wrap="nowrap" style={{ padding: '20px' }}>
       <Title variant="h3" style={{ maxWidth: '100vw' }} className="gradient-text-expand">{wording[game?.language]?.category}</Title>
       <ExpandGrid container gap={5} alignItems="center" justifyContent="center">
         {Object.entries(emojis).map((collection) => {

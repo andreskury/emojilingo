@@ -87,7 +87,7 @@ function Language() {
   return (
     !show
     && (
-    <Grid container gap={5} alignItems="center" justifyContent="center" flexDirection="column" style={{ padding: '20px' }}>
+    <Grid container gap={5} alignItems="center" justifyContent="center" flexDirection="column" wrap="nowrap" style={{ padding: '20px' }}>
       <TitleWrapper variant="h3" className="text-expand">
         <Title>Emojilingo</Title>
         ✨
