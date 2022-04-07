@@ -63,7 +63,11 @@ function AnswerCard({
     </div>
   );
 }
-
+/**
+ * Shows final results
+ * @component
+ * @return {React.ElementType} Scoreboard
+ */
 function Scoreboard() {
   const dispatch = useDispatch();
   const navigate = useNavigate();

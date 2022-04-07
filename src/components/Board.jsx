@@ -41,7 +41,11 @@ const PieceWrapper = styled('div')(() => ({
   height: '50vh',
   width: '100vw',
 }));
-
+/**
+ * Contains all the pieces and the text input
+ * @component
+ * @return {React.ElementType} Board
+ */
 function Board() {
   const dispatch = useDispatch();
   const navigate = useNavigate();

@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> components/Board.jsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Emojilingo documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="Board.html">Board</a></li><li><a href="Category.html">Category</a></li><li><a href="Game.html">Game</a></li><li><a href="Intro.html">Intro</a></li><li><a href="Language.html">Language</a></li><li><a href="module.exports.html">exports</a></li><li><a href="Piece.html">Piece</a></li><li><a href="Scoreboard.html">Scoreboard</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getRandom">getRandom</a></li><li><a href="global.html#playByText">playByText</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/Board.jsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import PropTypes from 'prop-types';
+import {
+  React, useCallback, useEffect, useState,
+} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Grid, styled } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { addAnswer, nextQuestion, resetGame } from '../redux/actions/gameActions';
+import { playByText } from '../utils/utils';
+import Piece from './Piece';
+
+const InputWrapper = styled('input')(({ status }) => {
+  let color;
+  if (status === 'error') {
+    color = 'red';
+  } else if (status === 'success') {
+    color = 'green';
+  } else {
+    color = 'white';
+  }
+  return ({
+    fontSize: '4rem',
+    position: 'fixed',
+    textAlign: 'center',
+    backgroundColor: 'transparent',
+    outline: '0',
+    lineHeight: '4',
+    border: '0',
+    caretColor: 'transparent',
+    textShadow: '0px 0px 17px #000',
+    color,
+    transform: status ? 'scale(2)' : 'scale(1)',
+    fontFamily: 'Nunito',
+    transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+    '&amp;::selection': {
+      background: 'transparent',
+    },
+  });
+});
+const PieceWrapper = styled('div')(() => ({
+  height: '50vh',
+  width: '100vw',
+}));
+/**
+ * Contains all the pieces and the text input
+ * @component
+ * @return {React.ElementType} Board
+ */
+function Board() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const game = useSelector((state) => state.game);
+  const [pieceInput, setPieceInput] = useState('');
+  const [status, setStatus] = useState(undefined);
+  const [disableEnter, setDisableEnter] = useState(false);
+
+  useEffect(() => {
+    if (game?.questions.length === 0) { dispatch(resetGame(navigate)); }
+  }, [dispatch, game?.questions, navigate]);
+
+  const formSubmit = useCallback(() => {
+    let result;
+    if (pieceInput &amp;&amp; !disableEnter) {
+      setDisableEnter(true);
+      if (pieceInput.toLowerCase() === game?.questions[game?.currentQuestion]?.[game?.language].toLowerCase()) {
+        setTimeout(() => playByText(game?.locale, pieceInput.toLowerCase()), 300);
+        setStatus('success');
+        new Audio('/beep1.mp3').play();
+        result = 'correct';
+      } else {
+        setStatus('error');
+        new Audio('/beep2.mp3').play();
+        result = 'incorrect';
+      }
+      setTimeout(() => {
+        dispatch(addAnswer({ index: game?.currentQuestion, result, answer: pieceInput }));
+        setStatus(undefined);
+        setPieceInput('');
+        setDisableEnter(false);
+        dispatch(nextQuestion());
+      }, 300);
+    }
+  }, [disableEnter, dispatch, pieceInput, game?.currentQuestion, game?.language, game?.locale, game?.questions]);
+
+  const handleSubmit = (e) => {
+    if (e.key === 'Enter') formSubmit();
+  };
+
+  return (
+    game?.questions.length > 0 &amp;&amp; (
+      &lt;Grid container direction="column" justifyContent="center" alignContent="center" alignItems="center" style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
+        &lt;PieceWrapper>
+          {game?.questions &amp;&amp; game?.questions.map((question, index) => &lt;Piece key={question.emoji} index={index} emoji={question.emoji} />)}
+        &lt;/PieceWrapper>
+        &lt;InputWrapper autoFocus value={pieceInput} onChange={(e) => { setPieceInput(e.target.value); }} onKeyDown={handleSubmit} status={status} />
+      &lt;/Grid>
+    )
+  );
+}
+
+InputWrapper.propTypes = {
+  status: PropTypes.string,
+};
+export default Board;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

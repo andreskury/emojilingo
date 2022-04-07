@@ -9,6 +9,11 @@ import { imgCacheReady } from '../redux/actions/gameActions';
 import Language from './Language';
 import { hideLoading } from '../redux/actions/loadingActions';
 
+/**
+ * Logic component for navigation and svg cache
+ * @component
+ * @return {React.ElementType} Game
+ */
 function Game() {
   const dispatch = useDispatch();
   const navigate = useNavigate();

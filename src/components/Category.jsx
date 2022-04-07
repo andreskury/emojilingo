@@ -34,7 +34,11 @@ function AnswerCard({ name, emoji, onClick }) {
     </CardWrapper>
   );
 }
-
+/**
+ * Shows emoji category selector
+ * @component
+ * @return {React.ElementType} Category
+ */
 function Category() {
   const dispatch = useDispatch();
   const navigate = useNavigate();

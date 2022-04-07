@@ -1,4 +1,10 @@
-export const getRandom = ({ collection, amount = 10 }) => {
+/**
+ * Chooses random indexes from an array
+ * @param {array} collection - Complete array
+ * @param {number} amount - The amount of indexes to return
+ * @return {array} collected
+ */
+export function getRandom({ collection, amount = 10 }) {
   const { length } = collection;
   const collected = [];
   const arr = [];
@@ -10,7 +16,7 @@ export const getRandom = ({ collection, amount = 10 }) => {
     }
   }
   return collected;
-};
+}
 
 let speechSynth;
 let voices;
@@ -35,7 +41,12 @@ function getVoices(locale) {
   cache[locale] = voices.filter((voice) => voice.lang === locale);
   return cache[locale];
 }
-
+/**
+ * Uses window speechSynthesis to speech given text on a specific locale if available
+ * @param {string} locale - Locale to use as voice
+ * @param {string} text - Text to speech
+ * @return {void}
+ */
 export function playByText(locale, text) {
   if (!speechSynth) {
     // eslint-disable-next-line no-console

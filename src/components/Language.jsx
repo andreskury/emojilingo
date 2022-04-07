@@ -78,7 +78,11 @@ function AnswerCard({ onClick, emoji, title }) {
     </CardWrapper>
   );
 }
-
+/**
+ * Shows available language selector
+ * @component
+ * @return {React.ElementType} Language
+ */
 function Language() {
   const dispatch = useDispatch();
   const navigate = useNavigate();

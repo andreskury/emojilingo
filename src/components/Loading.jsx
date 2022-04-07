@@ -10,7 +10,11 @@ const Background = styled(Backdrop)(() => ({
     maxWidth: '400px',
   },
 }));
-
+/**
+ * Loading Taco
+ * @component
+ * @return {React.ElementType} Loading
+ */
 export default function Loading() {
   const show = useSelector((state) => state.loading.show);
 

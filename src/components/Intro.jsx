@@ -48,7 +48,11 @@ function AnswerCard({ emoji, name }) {
     </div>
   );
 }
-
+/**
+ * Shows all the emojis in the array and its names
+ * @component
+ * @return {React.ElementType} Intro
+ */
 function Intro() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
