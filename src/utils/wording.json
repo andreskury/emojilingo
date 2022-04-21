@@ -1,0 +1,50 @@
+{
+    "EN": {
+        "welcome": "welcome to emoji lingo, please choose a category",
+        "category": "Category",
+        "animals": "animals",
+        "food": "food",
+        "congratulations": "All correct! Awesome!",
+        "correct_answers": "Correct answers"
+    },
+    "ES": {
+        "welcome": "bienvenido a emoji lingo, por favor seleccione una categoría",
+        "category": "Categoría",
+        "animals": "animales",
+        "food": "comida",
+        "congratulations": "Felicidationes! Todas correctas",
+        "correct_answers": "Respuestas correctas"
+    },
+    "IT": {
+        "welcome": "welcome to emoji lingo, please choose a category",
+        "category": "Categoria",
+        "animals": "animali",
+        "food": "cibo",
+        "congratulations": "Congratulations",
+        "correct_answers": "Correct answers"
+    },
+    "FR": {
+        "welcome": "bienvenue dans le jargon emoji, veuillez choisir une catégorie",
+        "category": "Category",
+        "animals": "Animaux",
+        "food": "aliments",
+        "congratulations": "Congratulations",
+        "correct_answers": "Correct answers"
+    },
+    "DE": {
+        "welcome": "Willkommen im Emoji-Jargon, bitte wählen Sie eine Kategorie aus",
+        "category": "Category",
+        "animals": "Tiere",
+        "food": "Lebensmittel",
+        "congratulations": "Congratulations",
+        "correct_answers": "Correct answers"
+    },
+    "PT": {
+        "welcome": "bem-vindo à linguagem emoji, por favor escolha uma categoria",
+        "category": "Category",
+        "animals": "animais",
+        "food": "Comida",
+        "congratulations": "Congratulations",
+        "correct_answers": "Correct answers"
+    }
+}

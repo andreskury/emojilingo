@@ -1,0 +1,37 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": [
+      "src"
+    ],
+    "includePattern": "\\.(jsx|js|ts|tsx)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "better-docs/component",
+    "better-docs/category",
+    "plugins/markdown"
+  ],
+  "opts": {
+    "encoding": "utf8",
+    "destination": "docs",
+    "recurse": true,
+    "verbose": true,
+    "readme": "readme.md",
+    "template": "node_modules/better-docs"
+  },
+  "templates": {
+    "better-docs": {
+      "name": "Emojilingo ✨",
+      "navigation": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/andreskury/emojilingo"
+        }
+      ]
+    },
+    "search": true
+  }
+}
