@@ -12,6 +12,7 @@ import ExpandGrid from './ExpandGrid';
 
 const ImageWrapper = styled('img')(() => ({
   width: '50%',
+  cursor: 'pointer',
 }));
 
 const Container = styled(Grid)(() => ({
@@ -28,7 +29,7 @@ const RoundBtn = styled(Button)(() => ({
   fontSize: '2rem',
   background: 'linear-gradient( 134.6deg,  #1D976C 15.4%, #93F9B9 74.7% )',
   backgroundSize: '400% 400%',
-  animation: 'gradient 15s ease infinite',
+  animation: 'gradient 15s ease infinite, pulsate-fwd 0.8s ease infinite',
 }));
 
 const Title = styled(Typography)(() => ({
@@ -39,15 +40,16 @@ const Title = styled(Typography)(() => ({
   fontWeight: 700,
 }));
 
-function AnswerCard({ emoji, name }) {
+function AnswerCard({ emoji, name, locale }) {
   const hex = emoji && emoji.codePointAt(0).toString(16);
   return (
     <div>
-      <ImageWrapper src={`https://emojiapi.dev/api/v1/${hex}.svg`} alt={emoji} />
+      <ImageWrapper onClick={() => { playByText(locale, name); }} src={`https://emojiapi.dev/api/v1/${hex}.svg`} alt={emoji} />
       <Typography>{name.toUpperCase()}</Typography>
     </div>
   );
 }
+
 /**
  * Shows all the emojis in the array and its names
  * @component
@@ -70,7 +72,7 @@ function Intro() {
       <Title variant="h3" className="gradient-text-expand">{wording[game?.language][game?.collection].toUpperCase()}</Title>
       <RoundBtn variant="contained" color="success" size="large" onClick={() => dispatch(startGame(navigate))}>Go!</RoundBtn>
       <ExpandGrid container gap={5} alignItems="center" justifyContent="center">
-        {game.questions.map((question) => <AnswerCard key={question.emoji} name={question[game.language]} emoji={question.emoji} />)}
+        {game.questions.map((question) => <AnswerCard key={question.emoji} name={question[game.language]} emoji={question.emoji} locale={game?.locale} />)}
       </ExpandGrid>
     </Container>
     )
@@ -79,5 +81,6 @@ function Intro() {
 AnswerCard.propTypes = {
   name: PropTypes.string.isRequired,
   emoji: PropTypes.string.isRequired,
+  locale: PropTypes.string.isRequired,
 };
 export default Intro;

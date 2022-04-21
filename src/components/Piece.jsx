@@ -10,7 +10,7 @@ const ImageWrapper = styled('img')(() => ({
 const PieceWrapper = styled('div')(({ position }) => {
   let left;
   if (position === 'right') {
-    left = '2000px';
+    left = '-2000px';
   } else if (position === 'left') {
     left = '2000px';
   } else {

@@ -62,7 +62,7 @@ function Board() {
     let result;
     if (pieceInput && !disableEnter) {
       setDisableEnter(true);
-      if (pieceInput.toLowerCase() === game?.questions[game?.currentQuestion]?.[game?.language].toLowerCase()) {
+      if (pieceInput.toLowerCase().trim() === game?.questions[game?.currentQuestion]?.[game?.language].toLowerCase()) {
         setTimeout(() => playByText(game?.locale, pieceInput.toLowerCase()), 300);
         setStatus('success');
         new Audio('/beep1.mp3').play();
@@ -88,7 +88,16 @@ function Board() {
 
   return (
     game?.questions.length > 0 && (
-      <Grid container direction="column" justifyContent="center" alignContent="center" alignItems="center" style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignContent="center"
+        alignItems="center"
+        style={{
+          animation: 'expand 0.5s ease', position: 'fixed', width: '100vw', height: '100vh',
+        }}
+      >
         <PieceWrapper>
           {game?.questions && game?.questions.map((question, index) => <Piece key={question.emoji} index={index} emoji={question.emoji} />)}
         </PieceWrapper>

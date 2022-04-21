@@ -39,6 +39,7 @@ export default function gameReducer(state = initialState, action = {}) {
         collection: action.payload.collection,
         questions: action.payload.questions,
         currentQuestion: 0,
+        imgCacheReady: false,
       };
     case IMG_CACHE_READY:
       return {
