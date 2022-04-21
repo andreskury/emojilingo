@@ -1,7 +1,21 @@
 {
   "name": "emojilingo",
   "version": "1.0.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreskury/emojilingo.git"
+  },
+  "keywords": [
+    "emojilingo",
+    "emoji",
+    "learn",
+    "language"
+  ],
+  "author": "Andrés Kurylec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreskury/emojilingo/issues"
+  },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
