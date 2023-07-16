@@ -955,6 +955,15 @@
             "FR": "Oeuf",
             "PT": "Ovo",
             "DE": "Ei"
+        },
+        {
+            "emoji": "🫛",
+            "EN": "Pea",
+            "ES": "Arveja",
+            "IT": "Pisello",
+            "FR": "Pois",
+            "PT": "Ervilha",
+            "DE": "Erbse"
         }
     ]
 }
